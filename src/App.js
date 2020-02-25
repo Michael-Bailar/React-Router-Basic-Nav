@@ -8,9 +8,11 @@ import { Route } from 'react-router-dom';
 const App = () => (
   <div>
     <Navigation />
-    <Route exact path="/"></Route>
-    <Route path="/about"></Route>
-    <Route path="/contact"></Route>
+
+
+    <Route exact path="/" component={Home}></Route>
+    <Route path="/about" component={About}></Route>
+    <Route path="/contact" component={Contact}></Route>
   </div>
 );
 
